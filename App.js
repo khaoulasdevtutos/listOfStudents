@@ -168,6 +168,8 @@ const Content = () => {
             Alert.alert('Attention', 'Please enter all the data !')
         } else {
             addStudent(student);
+            setStudent({id: 0, firstName:'', lastName:'', age:0, email:''});
+            setShowForm(false);
         }
     }
     
